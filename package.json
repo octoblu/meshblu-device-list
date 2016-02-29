@@ -1,6 +1,6 @@
 {
   "name": "meshblu-device-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Meshblu Device List",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "async": "^1.5.2",
+    "browser-meshblu-http": "^1.0.0",
     "debug": "^2.2.0",
     "lodash": "^4.5.1",
     "superagent": "^1.8.0-beta.1",
