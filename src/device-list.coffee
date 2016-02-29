@@ -1,5 +1,3 @@
-request     = require 'superagent'
-url         = require 'url'
 _           = require 'lodash'
 async       = require 'async'
 MeshbluHttp = require 'browser-meshblu-http'

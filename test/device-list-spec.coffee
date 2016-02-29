@@ -35,7 +35,7 @@ describe 'DeviceList', ->
         @firstDeviceGet = @meshblu
           .get '/v2/devices/hello-uuid'
           .set 'Authorization', "Basic #{auth}"
-          .reply 200, device: uuid: 'hello-uuid'
+          .reply 200, uuid: 'hello-uuid'
 
         @firstDeviceRevoke = @meshblu
           .delete '/devices/hello-uuid/tokens'
@@ -52,7 +52,7 @@ describe 'DeviceList', ->
         @secondDeviceGet = @meshblu
           .get '/v2/devices/howdy-uuid'
           .set 'Authorization', "Basic #{auth}"
-          .reply 200, device: uuid: 'howdy-uuid'
+          .reply 200, uuid: 'howdy-uuid'
 
         @secondDeviceRevoke = @meshblu
           .delete '/devices/howdy-uuid/tokens'
@@ -121,7 +121,7 @@ describe 'DeviceList', ->
         @firstDeviceGet = @meshblu
           .get '/v2/devices/hello-uuid'
           .set 'Authorization', "Basic #{auth}"
-          .reply 200, device: uuid: 'hello-uuid'
+          .reply 200, uuid: 'hello-uuid'
 
         @firstDeviceRevoke = @meshblu
           .delete '/devices/hello-uuid/tokens'
